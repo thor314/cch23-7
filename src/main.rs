@@ -24,6 +24,7 @@ async fn error_handler() -> impl IntoResponse {
   (StatusCode::INTERNAL_SERVER_ERROR, "Internal Server Error")
 }
 
+
 #[shuttle_runtime::main]
 async fn main(
   #[shuttle_secrets::Secrets] secret_store: shuttle_secrets::SecretStore,
